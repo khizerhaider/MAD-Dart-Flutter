@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mad/lab%203/aziz.dart';
+import 'package:mad/lab%203/khizer.dart';
 
 void main() {
   runApp(const MyApp());
