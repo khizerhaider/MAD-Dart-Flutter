@@ -15,7 +15,12 @@ class LabApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Labs',
       theme: ThemeData(primarySwatch: Colors.blue),
+      // un comment the Task you want to run
+      // but be careful that only 1 task will be executed at a time
       home: const lab05.Task1Screen(),
+      //home: const lab05.Task2Screen(),
+      //home: const lab05.Task3FirstScreen(),
+      //home: const lab05.Task3SecondScreen(),
     );
   }
 }
