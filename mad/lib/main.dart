@@ -22,7 +22,8 @@ class LabApp extends StatelessWidget {
       //home: const lab05.Task2Screen(),
       //home: const lab05.Task3FirstScreen(),
       //home: const lab05.Task3SecondScreen(),
-      home: lab06.ResponsiveGrid(),
+      // home: lab06.ResponsiveGrid(), // un comment for lab 6 task 1
+      home: const lab06.ProfileCard(),
     );
   }
 }
