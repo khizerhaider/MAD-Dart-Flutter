@@ -14,8 +14,8 @@ class LabApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Labs',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      //title: 'Flutter Labs',
+      //theme: ThemeData(primarySwatch: Colors.blue),
       // un comment the Task you want to run
       // but be careful that only 1 task will be executed at a time
       //home: const lab05.Task1Screen(),
@@ -23,7 +23,14 @@ class LabApp extends StatelessWidget {
       //home: const lab05.Task3FirstScreen(),
       //home: const lab05.Task3SecondScreen(),
       // home: lab06.ResponsiveGrid(), // un comment for lab 6 task 1
-      home: const lab06.ProfileCard(),
+      //home: const lab06.ProfileCard(),
+      title: 'Dashboard Demo', //only for lab 6 task 3
+      theme: ThemeData(
+        //only for lab6 task  3
+        primarySwatch: Colors.blue, //only for lab6 task  3
+        useMaterial3: true, //only for lab6 task  3
+      ), //only for lab6 task  3
+      home: const lab06.DashboardScreen(), //only for lab6 task  3
     );
   }
 }
