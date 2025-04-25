@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'labs/lab03/khizer.dart' as lab03;
 import 'labs/lab03/task1.dart' as lab03;
 import 'labs/lab05/lab05.dart' as lab05;
-import 'labs/lab06/lab06.dart' as lab06;
 import 'labs/lab07/lab7.dart' as lab07;
 
 void main() {
@@ -32,7 +31,8 @@ class LabApp extends StatelessWidget {
       //   useMaterial3: true, //only for lab6 task  3
       // ), //only for lab6 task  3
       // home: const lab06.DashboardScreen(), //only for lab6 task  3
-      home: const lab07.TimerApp(), // un comment for lab 7 task 1
+      //home: const lab07.TimerApp(), // un comment for lab 7 task 1
+      home: const lab07.FetchPostScreen(), // un comment for lab 7 task 2
     );
   }
 }
