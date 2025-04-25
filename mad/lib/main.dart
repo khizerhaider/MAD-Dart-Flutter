@@ -32,7 +32,8 @@ class LabApp extends StatelessWidget {
       // ), //only for lab6 task  3
       // home: const lab06.DashboardScreen(), //only for lab6 task  3
       //home: const lab07.TimerApp(), // un comment for lab 7 task 1
-      home: const lab07.FetchPostScreen(), // un comment for lab 7 task 2
+      //home: const lab07.FetchPostScreen(), // un comment for lab 7 task 2
+      home: const lab07.DatabaseScreen(), // un comment for lab 7 task 3
     );
   }
 }
