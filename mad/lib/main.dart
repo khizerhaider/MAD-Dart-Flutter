@@ -3,6 +3,7 @@ import 'labs/lab03/khizer.dart' as lab03;
 import 'labs/lab03/task1.dart' as lab03;
 import 'labs/lab05/lab05.dart' as lab05;
 import 'labs/lab07/lab7.dart' as lab07;
+import 'labs/lab09/lab9.dart' as lab09;
 
 void main() {
   runApp(const LabApp());
@@ -33,7 +34,8 @@ class LabApp extends StatelessWidget {
       // home: const lab06.DashboardScreen(), //only for lab6 task  3
       //home: const lab07.TimerApp(), // un comment for lab 7 task 1
       //home: const lab07.FetchPostScreen(), // un comment for lab 7 task 2
-      home: const lab07.DatabaseScreen(), // un comment for lab 7 task 3
+      //home: const lab07.DatabaseScreen(), // un comment for lab 7 task 3
+      home: const lab09.HomeScreen(), // un comment for lab 9 task 1
     );
   }
 }
