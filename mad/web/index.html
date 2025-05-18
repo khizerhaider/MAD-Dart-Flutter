@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
@@ -31,8 +18,30 @@
 
   <title>mad</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- ✅ Firebase JS SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.7.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.7.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.7.3/firebase-storage.js"></script>
 </head>
 <body>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDy-4mWCBVUH-j1TbyihO9_5qt_sCt_Zt4",
+      authDomain: "mobile-app-dev-8dc84.firebaseapp.com",
+      projectId: "mobile-app-dev-8dc84",
+      storageBucket: "mobile-app-dev-8dc84.appspot.com",
+      messagingSenderId: "568123241831",
+      appId: "1:568123241831:web:a4d8692e35a867c6a8abc2",
+      measurementId: "G-TJ5GKL5082"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Flutter Bootstrap -->
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

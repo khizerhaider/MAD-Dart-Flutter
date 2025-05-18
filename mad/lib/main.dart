@@ -4,9 +4,18 @@ import 'labs/lab03/task1.dart' as lab03;
 import 'labs/lab05/lab05.dart' as lab05;
 import 'labs/lab07/lab7.dart' as lab07;
 import 'labs/lab09/lab9.dart' as lab09;
+import 'labs/lab10/lab10.dart' as lab10;
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
-  runApp(const LabApp());
+// void main() {
+//   runApp(const LabApp());
+// }
+
+// un comment for lab 10 only
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(LabApp());
 }
 
 class LabApp extends StatelessWidget {
@@ -15,7 +24,7 @@ class LabApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Labs',
+      //title: 'Flutter Labs',
       theme: ThemeData(primarySwatch: Colors.blue),
       // un comment the Task you want to run
       // but be careful that only 1 task will be executed at a time
@@ -35,7 +44,9 @@ class LabApp extends StatelessWidget {
       //home: const lab07.TimerApp(), // un comment for lab 7 task 1
       //home: const lab07.FetchPostScreen(), // un comment for lab 7 task 2
       //home: const lab07.DatabaseScreen(), // un comment for lab 7 task 3
-      home: const lab09.HomeScreen(), // un comment for lab 9 task 1
+      //home: const lab09.HomeScreen(), // un comment for lab 9 task 1
+      title: 'Social Media App', // un comment for lab 10
+      home: lab10.FeedScreen(), // un comment for lab 10
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/post.dart';
+import '../../models/post.dart';
 
 class ApiService {
   final baseUrl = 'https://jsonplaceholder.typicode.com/posts';
